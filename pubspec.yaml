@@ -1,0 +1,34 @@
+name: calculator
+description: A new Flutter project.
+
+publish_to: "none" 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_size_text: ^3.0.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "dev_assets/calc.png"
+  adaptive_icon_background: "#191919"
+  adaptive_icon_foreground: "dev_assets/calc-adaptive.png"
+
+  flutter_lints: ^2.0.0
+
+flutter:
+ 
+  uses-material-design: true
