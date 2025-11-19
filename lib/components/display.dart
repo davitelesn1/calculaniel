@@ -11,7 +11,13 @@ class Display extends StatelessWidget {
     return Expanded(
       flex: 1,
       child: Container(
-        color: const Color.fromRGBO(48, 48, 48, 1),
+        decoration: const BoxDecoration(
+          color: Color.fromRGBO(48, 48, 48, 1),
+          image: DecorationImage(
+            image: AssetImage('dev_assets/images/sushi.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -28,7 +34,7 @@ class Display extends StatelessWidget {
                   fontWeight: FontWeight.w100,
                   decoration: TextDecoration.none,
                   fontSize: 80,
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
             ),

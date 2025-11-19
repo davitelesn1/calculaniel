@@ -43,3 +43,31 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+**/android/key.properties
+# Android local environment & keystore secrets
+**/android/local.properties
+**/*.keystore
+**/*.jks
+
+# Common env / secret files
+.env
+*.env
+.env.*
+
+# Firebase / Google service configs (if added later)
+**/google-services.json
+**/GoogleService-Info.plist
+
+# Fastlane and distribution metadata that may contain sensitive data
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/readme.md
+
+# Crashlytics / mapping uploads (keep out if containing symbols)
+**/mapping.txt
+
+# Xcode user-specific data
+ios/**/*.xcuserstate
+

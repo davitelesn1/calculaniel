@@ -25,11 +25,13 @@ class CalculatorState extends State<Calculator> {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
     return MaterialApp(
-      home: Column(
-        children: <Widget>[
-          Display(memory.value),
-          Keyboard(_onPressed),
-        ],
+      home: Container(
+        child: Column(
+          children: <Widget>[
+            Display(memory.value),
+            Keyboard(_onPressed),
+          ],
+        ),
       ),
     );
   }
